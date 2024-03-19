@@ -10,7 +10,17 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
+/**
+ * Storage class to read and write trip data to a file
+ */
 public class Storage {
+
+    /**
+     * Reads trip data from a file and populates the trips list
+     * @param trips list of trips
+     * @param currentDir current directory
+     * @param fileName name of the file
+     */
     public static void readTripFile(ArrayList<Trip> trips, String currentDir, String fileName) {
 
         Logger logger = Logger.getLogger("Storage");
@@ -46,6 +56,12 @@ public class Storage {
         }
     }
 
+    /**
+     * Writes trip data to a file
+     * @param trips list of trips
+     * @param tripsCount number of trips
+     * @param currentDir current directory
+     */
     public static void writeTripFile(ArrayList<Trip> trips, int tripsCount, String currentDir) {
         //local path of data file
 
