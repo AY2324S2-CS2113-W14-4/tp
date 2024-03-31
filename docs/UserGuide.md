@@ -12,7 +12,10 @@ Voyagers is a Java application designed to simplify trip management. It provides
 - **Delete Main Trip**: Remove an existing main trip from the list.
 - **Set Trip Details**: Modify trip details such as name, dates, location, and description for existing trips.
 - **List All Trips**: View a comprehensive list of all trips along with their details.
-
+- **Add a subtrip**: Add a new subtrip to an existing main trip.
+- **Add bills**: Add a new bill to an existing trip.
+- **Review a trip**: Review a trip with a scale of 1-10 'score' and your open-ended 'reflection'.
+- **Settle up bills**: Simplify the number of transactions for settling up bills.
 ## Usage
 
 ### Adding a Main Trip
@@ -76,3 +79,7 @@ readreview Trip1
 ```bash 
 exit
 ```
+
+### Settling up bills
+
+TO be implemented
