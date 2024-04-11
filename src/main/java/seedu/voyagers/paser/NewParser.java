@@ -48,8 +48,9 @@ public class NewParser {
         switch (command) {
         case "exit":
             return new ExitCommand();
-        case "listall":
-            return new ListCommand();
+        case "list":
+            values = line.split(" ");
+            return new ListCommand(values);
         case "deletemaintrip":
             return new DeleteCommand(parseArgs(line, ParserDefinitions.DELETE));
         case "addmaintrip":
